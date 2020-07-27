@@ -1,0 +1,118 @@
+HTML5 is the next major revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for structuring and presenting content on the World Wide Web.
+
+HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).
+
+The new standard incorporates features like video playback and drag-and-drop that have been previously dependent on third-party browser plug-ins such as Adobe Flash, Microsoft Silverlight, and Google Gears.
+
+Browser Support
+The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5 functionality.
+
+The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all have excellent support for HTML5.
+
+New Features
+HTML5 introduces a number of new elements and attributes that can help you in building modern websites. Here is a set of some of the most prominent features introduced in HTML5.
+
+New Semantic Elements − These are like <header>, <footer>, and <section>.
+
+Forms 2.0 − Improvements to HTML web forms where new attributes have been introduced for <input> tag.
+
+Persistent Local Storage − To achieve without resorting to third-party plugins.
+
+WebSocket − A next-generation bidirectional communication technology for web applications.
+
+Server-Sent Events − HTML5 introduces events which flow from web server to the web browsers and they are called Server-Sent Events (SSE).
+
+Canvas − This supports a two-dimensional drawing surface that you can program with JavaScript.
+
+Audio & Video − You can embed audio or video on your webpages without resorting to third-party plugins.
+
+Geolocation − Now visitors can choose to share their physical location with your web application.
+
+Microdata − This lets you create your own vocabularies beyond HTML5 and extend your web pages with custom semantics.
+
+Drag and drop − Drag and drop the items from one location to another location on the same webpage.
+
+Backward Compatibility
+HTML5 is designed, as much as possible, to be backward compatible with existing web browsers. Its new features have been built on existing features and allow you to provide fallback content for older browsers.
+
+It is suggested to detect support for individual HTML5 features using a few lines of JavaScript.
+
+HTML5 offers new elements for better document structure:
+
+Tag	Description
+<article>	Defines an article in a document
+<aside>	Defines content aside from the page content
+<bdi>	Isolates a part of text that might be formatted in a different direction from other text outside it
+<details>	Defines additional details that the user can view or hide
+<dialog>	Defines a dialog box or window
+<figcaption>	Defines a caption for a <figure> element
+<figure>	Defines self-contained content
+<footer>	Defines a footer for a document or section
+<header>	Defines a header for a document or section
+<main>	Defines the main content of a document
+<mark>	Defines marked/highlighted text
+<meter>	Defines a scalar measurement within a known range (a gauge)
+<nav>	Defines navigation links
+<progress>	Represents the progress of a task
+<rp>	Defines what to show in browsers that do not support ruby annotations
+<rt>	Defines an explanation/pronunciation of characters (for East Asian typography)
+<ruby>	Defines a ruby annotation (for East Asian typography)
+<section>	Defines a section in a document
+<summary>	Defines a visible heading for a <details> element
+<time>	Defines a date/time
+<wbr>	Defines a possible line-break
+
+
+New Form Elements:
+
+Tag	        Description
+
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation
+
+New Input Types
+
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+autocomplete
+autofocus
+form
+formaction
+formenctype
+formmethod
+formnovalidate
+formtarget
+height and width
+list
+min and max
+multiple
+pattern (regexp)
+placeholder
+required
+step
+
+HTML5 Graphics
+
+Tag	Description
+<canvas>	Draw graphics, on the fly, via scripting (usually JavaScript)
+<svg>	Draw scalable vector graphics
+
+New Media Elements
+
+Tag	Description
+<audio>	Defines sound content
+<embed>	Defines a container for an external (non-HTML) application
+<source>	Defines multiple media resources for media elements (<video> and <audio>)
+<track>	Defines text tracks for media elements (<video> and <audio>)
+<video>	Defines video or movie
