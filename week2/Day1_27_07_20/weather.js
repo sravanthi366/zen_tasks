@@ -5,7 +5,7 @@ function wDoc() {
        document.getElementById("demo2").innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=Chennai,in&appid=6ba7f072c72044920c23d2a85434856c", true);
+    xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=Chennai,in&appid=your API", true);
     xhttp.send();
   }
   
