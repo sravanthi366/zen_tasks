@@ -1,13 +1,16 @@
 //Write a function called “getOpposite”.
 //Given a number, return its opposite
 
-var num ="5a";
-let num1 = parseInt(num);
+var num =5;
+
 function getOpposite(num) {
-   if(num===num1){
-       console.log(-1);
-   }
-   return num*(-1);
+    
+if (typeof(num)=="number")
+    return num*(-1);
+   else
+    return -1;
 }
+
+
 var result = getOpposite(num);
-console.log(parseInt(result));
+console.log(result);
