@@ -1,0 +1,27 @@
+HTML -> what is html & its basic tags & HTML forms
+CSS -> 
+    position, 
+    display, float, 
+    media query(responsive), 
+    scaling(measurements),
+    precedance(parent inherit), 
+    class vs ID, use of important
+Bootstrap
+    gird system
+DOM
+    manipulating
+    getElementById
+    querySelector
+    append
+    appendChild
+    events
+    async vs defer
+https://developer.mozilla.org/en-US/docs/Web/HTML
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers
+https://getbootstrap.com/
+
+
+https://docs.google.com/document/d/1AB04kg6FD9UuJgfW3P9Ml_Ol9tFCNJRVT2mx4jPKK3U/edit
+https://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
