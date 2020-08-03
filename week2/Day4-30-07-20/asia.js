@@ -8,7 +8,12 @@ let data=JSON.parse(fs.readFileSync('country.json'));
 
  var res= data['country'].filter(function(element){
     return element.region=="Asia";
- })
+ }).forEach(element => {
+   console.log (element.name);
+   console.log(element.flag);
+   console.log(element.capital);
+
+ });
  console.log(res) 
 
  
