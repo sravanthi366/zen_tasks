@@ -1,6 +1,6 @@
 var list = [ 1, 2, 3 ]
-var [a,b] = list
+var [a,b,c]=list;
 
-[a,b]=[b,a]
+[ b, a ] = [ a, b ]
 console.log(a)
 console.log(b)
