@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Random Number Generator</title>
+    <style>
+        body {
+            width: 800px;
+            margin: auto;
+        }
+        
+        #eightdigit {
+            text-align: center;
+            width: 200px;
+            height: 50px;
+            margin-left: 280px;
+            padding-top: 20px;
+            background-color: yellowgreen;
+            color: white;
+            font-size: 30px;
+            color: white;
+        }
+        
+        .generator {
+            margin-left: 306px;
+            margin-top: 30px;
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let header = document.createElement('header')
+        header.setAttribute('style', 'background-color:black;color:white;text-align:center')
+        header.innerHTML = `<h1>A Random Number Generator</h1>`
+        document.body.append(header)
+
+        let label = document.createElement('label')
+        label.setAttribute('id', 'eightdigit')
+        let section = document.createElement('div')
+        section.setAttribute('id', 'eightdigit')
+
+        let btn = document.createElement('button')
+        btn.setAttribute('class', 'generator')
+        btn.innerText = "Generator"
+
+        btn.addEventListener('click', function() {
+            //var arr = [];
+            //while (arr.length < 8) {
+            // var rNum = Math.floor(10000000 + Math.random() * 90000000) + 1;
+            // if (arr.indexOf(rNum) === -1) arr.push(rNum);
+            document.getElementById("eightdigit").innerHTML = getRandomNumber(8);
+            // }
+
+            function getRandomNumber(n) {
+                const digits = Array.from({
+                    length: 10
+                }, (_, i) => i);
+                const result = Array.from({
+                    length: n
+                }, () => {
+                    const randIndex = Math.floor(Math.random() * digits.length);
+                    const digit = digits[randIndex];
+                    digits.splice(randIndex, 1);
+                    return digit;
+                });
+                return Number(result.join(''));
+            }
+
+        });
+        document.body.appendChild(section)
+        document.body.appendChild(btn)
+
+
+
+
+
+
+        /*   var randomNum = function() {
+
+              Math.floor(10000000 + Math.random() * 90000000);
+              document.getElementsByClassName("eightdigit").innerHTML = randomNum;
+          } */
+    </script>
+</body>
+
+</html>
