@@ -501,13 +501,64 @@ var data = [{
 ]
 
 
+var currentPage = 1;
+var recordsPerPage = 10;
 
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        changePage(currentPage);
+    }
+}
 
+function nextPage() {
+    if (currentPage < numPages()) {
+        currentPage++;
+        changePage(currentPage);
+    }
+}
 
+function changePage(page) {
+    var btn_next = document.getElementById("btn_next");
+    var btn_prev = document.getElementById("btn_prev");
+    var listing_table = document.getElementById("listingTable");
+    var page_span = document.getElementById("page");
 
+    // Validate page
+    if (page < 1) page = 1;
+    if (page > numPages()) page = numPages();
 
+    listing_table.innerHTML = "";
+    // console.log(data)
+    for (var i = (page - 1) * recordsPerPage; i < (page * recordsPerPage); i++) {
+        // console.log(data[i].name)
+        listing_table.innerHTML += data[i].id + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp" +
+            data[i].name + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp" +
+            data[i].email + "<br>";
 
+    }
+    page_span.innerHTML = page;
 
+    if (page == 1) {
+        btn_prev.style.visibility = "hidden";
+    } else {
+        btn_prev.style.visibility = "visible";
+    }
+
+    if (page == numPages()) {
+        btn_next.style.visibility = "hidden";
+    } else {
+        btn_next.style.visibility = "visible";
+    }
+}
+
+function numPages() {
+    return Math.ceil(data.length / recordsPerPage);
+}
+
+window.onload = function() {
+    changePage(1);
+};
 
 
 
@@ -520,7 +571,24 @@ header.setAttribute('class', 'header')
 header.innerText = 'Pagination'
 container.appendChild(header)
 
-let page = document.createElement('div')
+let div = document.createElement('div')
+div.id = "listingTable"
+container.appendChild(div)
+let prev = document.createElement('A')
+prev.setAttribute('href', 'javascript:prevPage()')
+prev.id = "btn_prev"
+prev.innerText = "Previous"
+container.appendChild(prev)
+let next = document.createElement('A')
+next.setAttribute('href', 'javascript:nextPage()')
+next.id = "btn_next"
+next.innerText = "Next"
+container.appendChild(next)
+
+
+
+
+/* let page = document.createElement('div')
 page.classList.add('page')
 container.appendChild(page)
 
@@ -569,4 +637,4 @@ let anc7 = document.createElement('A')
 anc7.setAttribute('href', '#')
 anc7.innerText = 'Next'
 
-page.appendChild(anc7)
+page.appendChild(anc7)  */
