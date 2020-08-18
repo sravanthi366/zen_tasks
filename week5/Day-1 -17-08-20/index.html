@@ -24,7 +24,7 @@
             src: url(seven-segment.ttf);
         }
         
-        #status {
+        #section {
             font-family: sevenSegment;
             font-size: 20em;
             color: #969696;
@@ -45,24 +45,11 @@
 
 <body>
 
-    <script>
-        function countDown(secs, elem) {
-            var element = document.getElementById(elem);
-            element.innerHTML = secs;
-            if (secs < 1) {
-                clearTimeout(timer);
-                element.innerHTML = '<h2>Happy Independence Day!!!</h2>';
-
-            }
-            secs--;
-            var timer = setTimeout('countDown(' + secs + ',"' + elem + '")', 1000);
-        }
+    <script src="app.js">
     </script>
-    <div id="status">
+    <div id="section">
     </div>
-    <script>
-        countDown(10, "status");
-    </script>
+
 
 </body>
 
