@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: auto;
+            width: 800%;
+        }
+        
+        .container {
+            background: #eee
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let cont = document.createElement('container')
+        cont.classList.add('container')
+
+        let row = document.createElement('row')
+        row.classList.add('row')
+
+        let div1 = document.createElement('div')
+        div1.setAttribute('Id', 'ProgressTest')
+        div1.innerHTML = '<h3>Question 1/10</h3>'
+
+        let div2 = document.createElement('div')
+        div2.innerHTML = '<h3>Score: 0</h3>'
+
+        document.body.append(cont)
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

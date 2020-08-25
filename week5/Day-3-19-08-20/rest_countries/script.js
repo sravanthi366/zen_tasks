@@ -37,7 +37,7 @@ async function info(lat, lon) {
         console.log(res);
         res.forEach(element => {
             let col4 = document.createElement('div');
-            col4.classList.add('col-4')
+            col4.classList.add('col', 'col-lg-4', 'col-sm-12')
 
 
             let card = document.createElement('div');
