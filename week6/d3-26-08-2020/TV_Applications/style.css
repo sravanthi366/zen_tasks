@@ -1,0 +1,31 @@
+html,
+body {
+    background-image: url(/images/cbb0b06ec15d6a53c7687c89a697739b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+.remote {
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    margin-left: 70%;
+}
+
+.container iframe {
+    position: absolute;
+    top: 90px;
+    left: 39%;
+}
