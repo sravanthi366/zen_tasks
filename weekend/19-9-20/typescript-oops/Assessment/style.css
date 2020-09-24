@@ -1,0 +1,76 @@
+body {
+    background-color: black !important;
+    overflow: hidden;
+}
+
+span.multicolor {
+    margin-left: 40% !important;
+    font-size: 70px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.test {
+    background-color: white;
+    font-size: 50px;
+    margin-top: 10px;
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.display {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(30%, -50%);
+    border-radius: 20px;
+}
+
+
+/* input[type=text],
+input[type=tel] {
+    display: block !important;
+    width: 80%;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+} */
+
+.availability {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, -50%);
+    border-radius: 20px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.radiobuttons {
+    color: white;
+}
+
+p {
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+}
+
+.btn {
+    transition: 0.8s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}

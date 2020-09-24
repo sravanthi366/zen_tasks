@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>
+                <span class="multicolor">PetShop</span>
+            </h1>
+        </div>
+        <div class="row">
+
+            <div class="col6">
+                <form class="enqueryForm" autocomplete="off" id="form">
+                    <span class="test">Enquery Form</span>
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="FullName" placeholder="Enter Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="phoneNo" placeholder="Enter Your Phone Number" required>
+                    </div>
+                    <div class="radiobuttons">
+                        <label for="adoptingYes">Enquiry to adopt </label>
+                        <input type="radio" name="adopting" id="yes" value='Yes'> &nbsp; &nbsp;
+                        <label for="adoptingNo"> Just For Information !</label>
+                        <input type="radio" name="adopting" id="No" value="Not Sure">
+                    </div>
+                    <select name="category" id="category" class="form-control">
+                        <option value="select" selected disabled required>Select pet category</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Camel">Camel</option>
+                        <option value="Dog">Dog</option>
+                        <option value="Goat">Goat</option>
+                        <option value="Horses">Horses</option>
+                    </select>
+                    <br>
+                    <button type="submit" class="btn btn-dark" onclick="submitForm()"> Submit</button>
+                </form>
+            </div>
+
+            <div class="availability" id="availability">
+                <p id="status"></p>
+                <br>
+                <button type="submit" class="btn btn-primary" onclick="showDetails()" style="margin-left:1rem">Show Details</button>
+            </div>
+            <div class="display" id="details">
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="pet.js"></script>
+
+</body>
+
+</html>
