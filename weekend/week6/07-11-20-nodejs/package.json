@@ -1,0 +1,19 @@
+{
+  "name": "07-11-20-nodejs",
+  "version": "1.0.0",
+  "description": "simple nodejs application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "sravanthi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs-utils": "^0.7.0"
+  }
+}
