@@ -38,13 +38,13 @@ fs.readdir("c:\\users\\SRAVANTHI\\Documents",
 
  const express = require('express')
  const app = express()
- app.listen(3000,()=>console.log)
+ app.listen(3000,()=>console.log("your app is runninig with server"))
  app.get('/home',(request,response) =>{
     response.send("hello there. it is simple homes router")
  })
 
  app.get("/list",(request,response)=>{
-    fs.readdir('c:\\users\\SRAVANTHI\\Documents\\GUVI_PRACTICE\\GUVI_LEARNING\\guvi_learning\\zen_tasks\\weekend\\week6\\07-11-20-nodejs',"utf-8",(err,data)=>{
+    fs.readdir("C:/Users/SRAVANTHI/Documents","utf-8",(err,data)=>{
         if (err) throw err;
         console.log(data);
         let res = '';

@@ -15,5 +15,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "fs-utils": "^0.7.0"
-  }
+  },
+  "devDependencies": {}
 }
